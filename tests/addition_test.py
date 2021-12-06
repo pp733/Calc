@@ -12,7 +12,6 @@ def test_calculation_addition():
     fileName = 'CSVFiles/Addition.csv'
     inputFile = os.path.join(fileName)
     df = pd.read_csv(inputFile)
-    print(df.head(5))
     for x, y in df.iterrows():
         sum = (y.Value_1, y.Value_2)
         record = x
