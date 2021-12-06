@@ -1,4 +1,4 @@
-![]()
+![](calc/Images/3.JPG)
 
 ![](calc/Images/1.JPG)
 
@@ -12,7 +12,7 @@ pip install -r requirements.txt
 
 To run tests, Lint, and Coverage report use this command:
 
-pytest  --pylint --cov
+pytest  --pylint --covs
 
 .pylintrc is the config for pylint
 .coveragerc is the config for coverage

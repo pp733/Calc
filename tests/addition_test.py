@@ -1,5 +1,7 @@
 """Testing Addition"""
+
 import pandas as pd
+#import time
 from calc import log
 import logging
 import os
@@ -17,5 +19,5 @@ def test_calculation_addition():
         record = x
         addition = Addition.create(sum)
         log.logging_data(inputFile, "addition", record)
-        logging.debug("This is the result")
+        #log.logging_data(time, inputFile, "addition", record)
         assert addition.get_result() == df['Result'][x]
