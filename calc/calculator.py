@@ -23,3 +23,8 @@ class Calculator:
     def add_numbers(tuple_values: tuple):
         """ adds list of numbers and returns an addition result object"""
         return Calculations.add_addition_calculation(tuple_values)
+    @staticmethod
+    def division(tuple_values: tuple):
+        """ divides list of numbers and returns an division result object"""
+        Calculations.add_division_calculation(tuple_values)
+        return True

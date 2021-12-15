@@ -1,4 +1,4 @@
-# Use the Nginx image
+                           # Use the Nginx image
 FROM nginx
 
 # Remove the default nginx.conf

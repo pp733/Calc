@@ -1,6 +1,6 @@
 """Testing the Calculator"""
 import pytest
-from calc.Calculator.calculator import Calculator
+from calc.calculator import Calculator
 from calc.history.calculations import Calculations
 from calc.calculations.addition import Addition
 from calc.calculations.multiplication import Multiplication
