@@ -19,6 +19,9 @@ class CalculatorController(ControllerBase):
             # this will call the correct operation
             getattr(Calculator, operation)(my_tuple)
             result = str(Calculator.get_last_result_value())
+            output_file = open("result.csv", "a")
+            output_file.write(f'{value1},{value2},{operation}{result}')
+            output_file.close()
             return render_template("result.html", value1=value1, value2=value2, operation=operation, result=result)
         return render_template("calculator.html", error=error)
     @staticmethod
