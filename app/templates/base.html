@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {% block head %}
 
-        <link href="CSS/style.css" rel="stylesheet">
-        <link href="CSS/global.css" rel="stylesheet">
+        <link href="./static/css/style.css" rel="stylesheet">
+        <link href="./static/css/global.css" rel="stylesheet">
         <title>{% block title %}{% endblock %} - My Webpage</title>
     {% endblock %}
     <!-- Bootstrap CSS -->
@@ -63,7 +63,7 @@
                 <li class="nav-item dropdown flex-column-sm alignn-items-sm-end user-profile-dd">
                     <a class="nav-link dropdown-toggle justify-content-center align-items-center" href="#" id="navbarDropdown1" role="button"
                        data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="/static/images/profileicon.jpeg" alt='user_avatar' class="me-2 rounded-circle user-avatar">
+                        <img src="/app/templates/static/images/profileicon.jpeg" alt='user_avatar' class="me-2 rounded-circle user-avatar">
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
                         <li><a class="dropdown-item" href="profile.html">Edit Profile</a></li>

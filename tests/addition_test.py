@@ -1,7 +1,5 @@
 """Testing Addition"""
-
 import pandas as pd
-#import time
 from calc import log
 import logging
 import os
@@ -14,10 +12,11 @@ def test_calculation_addition():
     fileName = 'CSVFiles/Addition.csv'
     inputFile = os.path.join(fileName)
     df = pd.read_csv(inputFile)
+    print(df.head(5))
     for x, y in df.iterrows():
         sum = (y.Value_1, y.Value_2)
         record = x
         addition = Addition.create(sum)
         log.logging_data(inputFile, "addition", record)
-        #log.logging_data(time, inputFile, "addition", record)
+        logging.debug("This is the result")
         assert addition.get_result() == df['Result'][x]
