@@ -6,12 +6,12 @@ class IndexController(ControllerBase):
     def get():
         return render_template('index.html')
 
-class pylintController(ControllerBase):
+class PylintController(ControllerBase):
     @staticmethod
     def get():
         return render_template('pylint.html')
 
-class AAAtestingController(ControllerBase):
+class AAAController(ControllerBase):
     @staticmethod
     def get():
         return render_template('AAA.html')
