@@ -1,9 +1,3 @@
-![](calc/Images/3.JPG)
-
-![](calc/Images/1.JPG)
-
-![](calc/Images/2.JPG)
-
 # Calculator Project Setup
 [![Build Status](https://app.travis-ci.com/pp733/calc2.svg?branch=main)](https://app.travis-ci.com/github/pp733/calc2)
 
@@ -18,5 +12,11 @@ pytest  --pylint --covs
 .coveragerc is the config for coverage
 setup.py is a config file for pytest
 
+![](calc/Images/additiontest.JPG)
 
+![](calc/Images/subtest.JPG)
+
+![](calc/Images/multitest.JPG)
+
+![](calc/Images/divtest.JPG)
 
